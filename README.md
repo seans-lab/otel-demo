@@ -2,4 +2,4 @@
 # otel-demo
 
 
-``` kubectl create namespace app
+``` kubectl create namespace app ```
