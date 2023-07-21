@@ -38,3 +38,5 @@ kubectl config set-context --current --namespace=app
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout otel.key -out otel.crt -subj "/CN=DNS-NAME"
 kubectl create secret tls otel-secret --key="otel.key" --cert="otel.crt"
 ```
+Modify the attached otel-ingress.yaml file to reflect the DNS name used for the deployment.
+
