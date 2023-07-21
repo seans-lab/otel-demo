@@ -6,10 +6,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - otel.seanginx.net
+    - DOMAIN-NAME
     secretName: otel-secret
   rules:
-  - host: otel.seanginx.net
+  - host: DOMAIN-NAME
     http:
       paths:
       - path: /
